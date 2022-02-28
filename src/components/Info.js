@@ -4,6 +4,12 @@ import Interests from "./Interests";
 import Footer from "./Footer";
 import avatar from "../avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+
+
+
 export default function Info() {
   return (
     <div className="DintonDigitalBusinessCard">
@@ -18,11 +24,15 @@ export default function Info() {
             </div>
             <div className="buttons">
               <div className="Button">
-                <FontAwesomeIcon icon="fa-solid fa-envelope" />
+                <FontAwesomeIcon icon={faEnvelope} size="xl" />
                 <p className="EmailText">Email</p>
               </div>
               <div className="ButtonLinked">
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ color: "white" }}
+                  size="xl"
+                />
                 <p className="LinkedInText">LinkedIn</p>
               </div>
             </div>
